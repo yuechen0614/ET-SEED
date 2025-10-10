@@ -6,7 +6,7 @@ import time
 torch.manual_seed(3407)
 import torch.nn as nn
 import wandb
-from SE3EquivManip.utils.loss_utils import compute_loss
+from etseed.utils.loss_utils import compute_loss
 from diffusers.optimization import get_scheduler
 from tqdm.auto import tqdm
 
@@ -14,10 +14,10 @@ from tqdm.auto import tqdm
 from pymunk.space_debug_draw_options import SpaceDebugColor
 from skvideo.io import vwrite
 from pdb import set_trace as bp
-from SE3EquivManip.dataset.toy_dataset import ToyDataset
-from SE3EquivManip.model.se3_transformer.equinet import SE3ManiNet_Invariant, SE3ManiNet_Equivariant_Separate
-from SE3EquivManip.utils.SE3diffusion_scheduler import DiffusionScheduler, DiffusionScheduler_vanilla
-from SE3EquivManip.utils.group_utils import SE3_to_se2,se2_to_SE3
+from etseed.dataset.toy_dataset import ToyDataset
+from etseed.model.se3_transformer.equinet import SE3ManiNet_Invariant, SE3ManiNet_Equivariant_Separate
+from etseed.utils.SE3diffusion_scheduler import DiffusionScheduler, DiffusionScheduler_vanilla
+from etseed.utils.group_utils import SE3_to_se2,se2_to_SE3
 
 # Set the environment variables.
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"

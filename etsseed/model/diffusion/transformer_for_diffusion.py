@@ -4,8 +4,8 @@ import torch
 import torch.nn as nn
 
 
-from SE3EquivManip.model.diffusion.positional_embedding import SinusoidalPosEmb
-from SE3EquivManip.model.common.module_attr_mixin import ModuleAttrMixin
+from etseed.model.diffusion.positional_embedding import SinusoidalPosEmb
+from etseed.model.common.module_attr_mixin import ModuleAttrMixin
 
 logger = logging.getLogger(__name__)
 
