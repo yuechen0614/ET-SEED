@@ -25,7 +25,7 @@ torch.manual_seed(3407)
 
 # Configure parameters
 config = {
-    "dataset_path": "/home/yue.chen/work/Robotics/SE3-EquivManip/log/50_rotate_triangle.npy",  # Replace it with your file path.
+    "dataset_path": "data_path.npy",  # Replace it with your file path.
     "save_path": "log",
     "task_name": "rotate_triangle",
     "pred_horizon": 4,

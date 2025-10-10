@@ -22,7 +22,7 @@ from etseed.utils.group_utils import SE3_to_se2,se2_to_SE3
 
 # Configure parameters
 config = {
-    "dataset_path": "/home/yue.chen/work/Robotics/SE3-EquivManip/log/50_rotate_triangle.npy", # replace with your data path
+    "dataset_path": "data_path.npy", # replace with your data path
     "save_path": "log",
     "task_name": "rotate_triangle",
     "pred_horizon": 4,
@@ -144,7 +144,7 @@ def test_batch(nets, noise_scheduler, nbatch, device):
     return loss_cpu
 
 
-# 主测试函数
+# Main function
 def main():
     dataloader = create_dataloader()
     device = torch.device('cuda')
